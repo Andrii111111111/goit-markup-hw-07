@@ -613,20 +613,12 @@ body {
     margin-bottom: 8px;
 }
 
-.team-list {
-    /* display: flex;
-    gap: 24px; */
-}
-
 @media only screen and (min-width: 768px) {
     .team-list {
         display: flex;
         flex-wrap: wrap;
-
-
+        gap: 64px 24px;
     }
-
-
 }
 
 @media only screen and (min-width: 1158px) {
@@ -636,17 +628,9 @@ body {
 }
 
 .team-list-item {
-    /* flex-basis: calc((100% - 24px * 3)/4); */
     background: var(--active-linc-cl-txt);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-}
-
-@media only screen and (min-width: 768px) {
-    .team-list-item {
-        flex-basis: calc((100% - 24px)/2);
-    }
-
 
 }
 
@@ -655,14 +639,18 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
-
-    .team-list-item:nth-child(odd) {
-        margin-right: 24px;
+    .team-list-item {
+        flex-basis: calc((100% - 24px)/2);
     }
+}
 
-    .team-list-item:nth-last-child(n+2) {
-        margin-bottom: 64px;
+.team-list-item:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 1158px) {
+    .team-list-item {
+        flex-basis: calc((100% - 24px * 3)/4);
     }
 }
 
@@ -696,8 +684,17 @@ body {
 
 /* Customers */
 .customers {
-    padding-top: var(--padding-size);
-    padding-bottom: var(--padding-size);
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+}
+
+@media only screen and (min-width: 1158px) {
+    .customers {
+        padding-top: var(--padding-size);
+        padding-bottom: var(--padding-size);
+
+    }
 }
 
 .customers-heading {
@@ -710,23 +707,42 @@ body {
     text-transform: capitalize;
     color: var(--second-text-color);
     margin-bottom: 72px;
+
 }
 
 .customers-links {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 16px;
 }
+
+@media only screen and (min-width: 768px) {
+    .customers-links {
+        gap: 72px 24px;
+        justify-content: center;
+    }
+}
+
 
 .customers-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 168px;
+    width: 190px;
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     color: #8E8F99;
     transition: border-color var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1), color var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+    .customers-link {
+        width: 168px;
+        height: 88px;
+
+
+    }
 }
 
 .customers-icon {
