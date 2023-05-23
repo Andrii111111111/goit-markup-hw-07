@@ -18,12 +18,32 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header header-section">
+    <header class="header header-section">
       <div class="header-container container">
         <nav class="nav">
           <a class="logo-link link" href="./index.html">
             Web<span class="logo-text logo-up-cl">Studio</span></a
           >
+        </address>
+        
+      </div>
+      <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="burger-menu" width="32" height="22">
+                  <use href="./images/icons.svg#burger-menu"></use>
+                </svg>
+          </button>
+    </header>
+    <main>
+      <section class="hero hero-section">
+        <div class="hero-container container">
+          <h1 class="hero-headings">Effective Solutions for Your Business</h1>
+          <button class="btn" type="button" data-modal-open>
+            Order Service
+          </button>
           <ul class="nav-list list">
             <li>
               <a
@@ -43,27 +63,18 @@
         </nav>
         <address class="addres">
           <ul class="adres-list list">
-            <li>
+            <li class="adres-list-item">
               <a class="contacts-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="adres-list-item">
               <a class="contacts-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
-        </address>
-      </div>
-    </header> -->
-    <main>
-      <section class="hero hero-section">
-        <div class="hero-container container">
-          <h1 class="hero-headings">Effective Solutions for Your Business</h1>
-          <button class="btn" type="button" data-modal-open>
-            Order Service
-          </button>
+          
         </div>
       </section>
       <section class="about about-section">
@@ -678,5 +689,7 @@
     </div>
     <!-- modal script -->
     <script src="./js/modal.js"></script>
+    <!-- mobile-menu script -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
