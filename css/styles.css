@@ -49,6 +49,8 @@ ul {
 /* outline: 2px solid red; */
 /* outline-offset: -2px; */
 
+
+
 /* container */
 
 .container {
@@ -201,8 +203,6 @@ body {
         margin-bottom: 12px;
     }
 }
-
-
 
 .contacts-link:hover,
 .contacts-link:focus {
