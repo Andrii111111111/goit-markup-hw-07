@@ -59,7 +59,6 @@ ul {
     padding: 0 16px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -273,6 +272,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-y: auto;
     padding-left: 40px;
     padding-bottom: 40px;
     padding-right: 35px;
@@ -307,6 +307,7 @@ body {
 
 .mobile-menu-item-link {
     font-weight: 700;
+    font-style: italic;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -1213,7 +1214,7 @@ body {
     background: var(--cl-border);
     border: 1px solid rgba(0, 0, 0, 0.1);
     top: 24px;
-    left: 360px;
+    left: 345px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1222,6 +1223,12 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     fill: var(--bg-color);
     transition: var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1), border var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1), fill var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (max-width: 400px) {
+    .modal-cls-btn {
+        left: 250px;
+    }
 }
 
 .modal-cls-btn:hover,
