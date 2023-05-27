@@ -339,6 +339,10 @@ body {
     }
 }
 
+.mob-menu-list-item {
+    font-style: normal;
+}
+
 .mob-menu-list-item:not(:last-child) {
     margin-bottom: 40px;
 }
@@ -365,6 +369,8 @@ body {
         gap: 45px;
     }
 }
+
+
 
 /* footer */
 
